@@ -12,4 +12,11 @@ Basically a modified version of PT About Widget.  It *requires* the Precise Them
 
 ## Installation
 
-Zip this directory and manually upload it to Wordpress.  The widget will show up as "NCM: Page Include".
+1. Zip this directory:
+```sh
+# Mac, Linux instructions only
+zip -r courtyard-page-include-widget-plugin.zip courtyard-page-include-widget-plugin -x *.git*
+```
+2. Follow instructions https://codex.wordpress.org/Plugins_Add_New_Screen#Upload_Plugins to manually upload the plugin ZIP `courtyard-page-include-widget-plugin`.
+3. Activate the plugin.
+4. Use the plugin as you would the "PT: About" plugin.
