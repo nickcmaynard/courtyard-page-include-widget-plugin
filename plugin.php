@@ -2,7 +2,7 @@
 /*
 Plugin Name: Courtyard Page Include Widget Plugin
 Plugin URI: https://github.com/nickcmaynard/courtyard-page-include-widget-plugin
-Description: This plugin adds a custom widget to augment the PT Courtyard theme.  It REQUIRES the PT Courtyard theme to be active.
+Description: This plugin adds a custom "page include" widget to augment the PT Courtyard theme.  It *requires* the PT Courtyard theme to be active.
 Version: 1.0
 Author: Nick Maynard
 Author URI: https://github.com/nickcmaynard
@@ -29,7 +29,7 @@ wp_enqueue_style( 'ncm-courtyard-page-include-widget');
  */
 class NCM_Courtyard_Page_Include_Widget extends WP_Widget {
     function __construct() {
-        $widget_ops = array( 'classname' => 'ncm-courtyard-page-include', 'description' => esc_html__( 'Show a single page without surrounding image.', 'courtyard' ), 'customize_selective_refresh' => true, );
+        $widget_ops = array( 'classname' => 'ncm-courtyard-page-include', 'description' => esc_html__( 'Show a single page\'s content.', 'courtyard' ), 'customize_selective_refresh' => true, );
         $control_ops = array( 'width' => 200, 'height' =>250 );
         parent::__construct( false, $name = esc_html__( 'NCM: Page Include', 'courtyard' ), $widget_ops, $control_ops);
     }
